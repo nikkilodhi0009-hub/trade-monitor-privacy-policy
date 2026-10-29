@@ -17,24 +17,39 @@
 </head>
 <body>
   <h1>Trade Monitor Privacy Policy</h1>
-  <p><strong>Last updated:</strong> 28 October 2026<br><strong>Publisher:</strong> Nikki Lodhi</p>
+  <p><strong>Last updated:</strong> 29 October 2026<br><strong>Publisher:</strong> Nikki Lodhi</p>
+
   <h2>About Trade Monitor</h2>
   <p>Trade Monitor provides general market information, charts, indicator signals and alerts for supported instruments, including UKOUSD, XAUUSD, BTCUSD and USOUSD. It is an informational tool; it does not connect to brokerage accounts, execute trades, or provide personalized financial advice.</p>
+
   <h2>Information processed by the app</h2>
-  <p>You do not need to create an account or enter your name, email address, payment details or brokerage credentials. The app does not send your signal history to a server operated by Nikki Lodhi. Signal history and monitoring preferences are stored locally on your device so the app can display them. On Android, app-data backup is disabled. On Apple devices, local app data is managed by the operating system and may be included in device backups according to your device settings. Clearing app data or uninstalling the app removes its local app data.</p>
-  <p>If you allow notifications, Trade Monitor can show monitoring and signal notifications on your device. These are generated locally by the app; it does not use a remote push-notification service.</p>
+  <p>You do not need to create an account or enter your name, email address, payment details or brokerage credentials. Signal history, monitoring preferences, notification preferences, and the most recent 10 entry-notification records are stored locally on your device. On Apple devices, local app data is managed by the operating system and may be included in device backups according to your device settings. Clearing app data or uninstalling the app removes its local app data. The Android version currently stores its monitoring data locally on the device.</p>
+  <p>If you enable notifications and start a pair on iOS, the app sends your APNs device token, selected pair, and subscription expiry to the Trade Monitor push service hosted by Cloudflare so it can deliver entry alerts while the app is in the background. Free and Lite subscriptions expire after 30 minutes; Max subscriptions are removed when monitoring is stopped or when the app next resets its monitoring session. Entry alerts include the pair, direction, entry price, and signal time. Exit events do not send notifications. You can disable notifications per pair in the iOS Home screen; stopping a pair removes its subscription.</p>
+
   <h2>Market data — Bitget</h2>
-  <p>When market data is loaded or monitoring is active, the app requests public ticker and candle data from Bitget. The requests include market symbols and chart parameters such as interval and requested time range. Bitget and network providers necessarily receive your IP address and technical connection information with these requests and may infer your approximate location. The app does not send your locally stored signal history or brokerage credentials to Bitget. Bitget handles information it receives under its own <a href="https://www.bitget.com/terms/legal/360015150651">Privacy Notice</a>.</p>
+  <p>When market data is loaded or monitoring is active, the app requests public ticker and candle data from Bitget. For Apple push alerts, the Trade Monitor push service also requests one-minute candle data from Bitget while a pair has an active subscription. These requests include market symbols and chart parameters such as interval and requested time range. Bitget, Cloudflare, and network providers may receive your IP address and technical connection information and may infer your approximate location. The app does not send your locally stored signal history or brokerage credentials to Bitget. Bitget handles information it receives under its own <a href="https://www.bitget.com/terms/legal/360015150651">Privacy Notice</a>.</p>
+
   <h2>Country check on Apple devices</h2>
-  <p>When you start monitoring on the iOS or macOS version, the app checks the apparent country of your internet connection by requesting the country code from <a href="https://ipapi.co/">ipapi.co</a>. This request necessarily exposes your IP address and technical connection information to ipapi.co. The app uses the returned country code to decide whether to show its India VPN prompt; it does not store the IP address or use this check to identify you. This country check is not used by the Android version. See <a href="https://ipapi.co/privacy/">ipapi.co’s privacy policy</a> for its handling of request data.</p>
-  <h2>Advertising, analytics and sale of data</h2>
-  <p>The current app versions do not display ads and do not include an advertising SDK, analytics SDK or third-party crash-reporting SDK. Nikki Lodhi does not sell personal information collected through the app.</p>
+  <p>When you start monitoring on the iOS version, the app checks the apparent country of your internet connection by requesting the country code from <a href="https://ipapi.co/">ipapi.co</a>. This request necessarily exposes your IP address and technical connection information to ipapi.co. The app uses the returned country code to decide whether to show its India VPN prompt; it does not store the IP address or use this check to identify you. This country check is not used by Android. See <a href="https://ipapi.co/privacy/">ipapi.co’s privacy policy</a> for its handling of request data.</p>
+
+  <h2>Advertising</h2>
+  <p>The iOS app uses Google Mobile Ads. During development it uses Google's test ad units only. If production ads are enabled later, Google may process device identifiers, IP address, approximate location, and ad interaction information to deliver and measure ads, subject to your device privacy settings and Google's <a href="https://policies.google.com/privacy">Privacy Policy</a>. Lite removes ads. The Android app does not currently include advertising.</p>
+
+  <h2>In-app purchases</h2>
+  <p>When offered, iOS Lite and Max purchases are processed by Apple through StoreKit. The app receives purchase entitlement status from Apple to provide the selected features; Lite removes ads and Max enables simultaneous monitoring of all four pairs. The app does not receive or store your full payment card details. Apple handles purchase and payment information under its own privacy policy.</p>
+
+  <h2>Analytics and sale of data</h2>
+  <p>The app does not include an analytics or third-party crash-reporting SDK. Nikki Lodhi does not sell personal information collected through the app.</p>
+
   <h2>Permissions and controls</h2>
-  <p>Internet access is used for market data and, on Apple devices, the country-code check described above. Notification permission is optional and controls whether local monitoring and signal notifications can be shown. The app does not request precise device location. You can stop monitoring in the app and change notification permission in your device settings.</p>
+  <p>Internet access is used for market data and, on Apple devices, the country-code check described above. Notification permission is optional and controls whether local and remote entry signal notifications can be shown. On iOS, you can enable or disable alerts separately for each pair on the Home screen. The app does not request precise device location. You can stop monitoring in the app and change notification permission in your device settings.</p>
+
   <h2>Children</h2>
   <p>Trade Monitor is a general market-information app and is not designed to collect personal information from children. It does not require an account or ask users to provide personal details.</p>
+
   <h2>Data retention and policy changes</h2>
-  <p>Signal history and preferences remain in local app data until cleared or the app is uninstalled. Bitget and ipapi.co determine their own retention and processing practices for requests they receive, as described in their respective privacy notices. This policy may be updated when the app or its data practices change. The current policy will remain available at this URL.</p>
+  <p>Signal history, notification history, and preferences remain in local app data until cleared or the app is uninstalled. Push subscriptions are retained by the Trade Monitor push service only while active and are removed when monitoring is stopped or the subscription expires. Bitget, ipapi.co, Google, Apple, and Cloudflare determine their own retention and processing practices for information they receive, as described in their respective privacy notices. This policy may be updated when the app or its data practices change. The current policy will remain available at this URL.</p>
+
   <h2>Contact</h2>
   <p>For privacy or support questions, contact Nikki Lodhi at <a href="mailto:lodhiboys74@gmail.com">lodhiboys74@gmail.com</a>.</p>
 </body>
